@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ef899a3-d075-4a7f-9ade-81506900bb6a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+    <list default="true" id="1ef899a3-d075-4a7f-9ade-81506900bb6a" name="Changes" comment="Testing de funcionalidad">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/damdi/gestorcomandaslahuerta/Camarero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/damdi/gestorcomandaslahuerta/Camarero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/damdi/gestorcomandaslahuerta/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/damdi/gestorcomandaslahuerta/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/damdi/gestorcomandaslahuerta/PrimaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/damdi/gestorcomandaslahuerta/PrimaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/damdi/gestorcomandaslahuerta/SecondaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/damdi/gestorcomandaslahuerta/SecondaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/es/damdi/gestorcomandaslahuerta/primary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/es/damdi/gestorcomandaslahuerta/primary.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,20 +34,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="es.damdi.gestorcomandaslahuerta.App" />
@@ -81,8 +77,17 @@
       <option name="presentableId" value="Default" />
       <updated>1685388240175</updated>
       <workItem from="1685388241187" duration="17000" />
-      <workItem from="1685388350334" duration="2277000" />
+      <workItem from="1685388350334" duration="2705000" />
+      <workItem from="1685464585909" duration="4833000" />
     </task>
+    <task id="LOCAL-00001" summary="Testing de funcionalidad">
+      <created>1685391954547</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685391954547</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,5 +103,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Testing de funcionalidad" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testing de funcionalidad" />
   </component>
 </project>

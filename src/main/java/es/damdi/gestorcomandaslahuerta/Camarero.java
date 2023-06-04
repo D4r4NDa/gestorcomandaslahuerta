@@ -8,12 +8,14 @@ public class Camarero implements Serializable {
     private String nombre;
     private String password;
     private Boolean online;
+    private String uid;
 
-    public Camarero(String email, String nombre, String password, Boolean online) {
+    public Camarero(String email, String nombre, String password, Boolean online, String uid) {
         this.email = email;
         this.nombre = nombre;
         this.password = password;
         this.online = online;
+        this.uid = uid;
     }
 
     public Camarero() {
@@ -36,6 +38,10 @@ public class Camarero implements Serializable {
         return this.online;
     }
 
+    public String getUid() {
+        return this.uid;
+    }
+
     public void setNombre(String nombre) {
         this.nombre= nombre;
     }
@@ -50,6 +56,9 @@ public class Camarero implements Serializable {
 
     public void setOnline(Boolean online) {
         this.online= online;
+    }
+    public void setUid(String uid) {
+        this.uid= uid;
     }
 }
 

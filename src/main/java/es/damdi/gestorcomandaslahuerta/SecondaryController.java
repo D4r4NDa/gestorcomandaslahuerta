@@ -51,6 +51,7 @@ public class SecondaryController {
         String email;
         String password;
         String nombre;
+        String uid;
 
         email= emailField.getText();
         password= passwordField.getText();
@@ -62,8 +63,9 @@ public class SecondaryController {
               .setEmailVerified(false)
               .setPassword(password);
           UserRecord userRecord = auth.createUser(request);
+          uid= userRecord.getUid();
 
-          Camarero c= new Camarero(email, nombre.toString(), password, false);
+          Camarero c= new Camarero(email, nombre.toString(), password, false, uid.toString());
 
           db.getReference("camareros").child(email.toString().replace(".","-")).setValue(c, null);
 

@@ -11,12 +11,14 @@ public class Employee {
     private final StringProperty name;
     private final StringProperty password;
     private final BooleanProperty online;
+    private final StringProperty uid;
 
-    public Employee(String email, String name, String password, Boolean online) {
+    public Employee(String email, String name, String password, Boolean online, String uid) {
         this.email = new SimpleStringProperty(email);
         this.name = new SimpleStringProperty(name);
         this.password = new SimpleStringProperty(password);
         this.online= new SimpleBooleanProperty(online);
+        this.uid= new SimpleStringProperty(uid);
     }
 
     public String getEmail() {
@@ -65,6 +67,18 @@ public class Employee {
 
     public BooleanProperty onlineProperty() {
         return online;
+    }
+
+    public String getUid() {
+        return uid.get();
+    }
+
+    public void setUid(String uid) {
+        this.uid.set(uid);
+    }
+
+    public StringProperty uidProperty() {
+        return uid;
     }
 
 }
