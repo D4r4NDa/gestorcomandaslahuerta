@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.damdi.gestorcomandaslahuerta.controllers.PrimaryController">
+   <children>
+      <BorderPane>
+          <left>
+              <TableView fx:id="employeeTable">
+                  <columns>
+                      <TableColumn fx:id="emailColumn" prefWidth="200" text="Email" />
+                      <TableColumn fx:id="nameColumn" prefWidth="200" text="Name" />
+                  </columns>
+              </TableView>
+          </left>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="54.0" layoutY="14.0" onAction="#showAddEmployeeDialog" text="Registrar camarero" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="14.0" />
+                  <Button layoutX="75.0" layoutY="63.0" mnemonicParsing="false" onAction="#deleteEmployee" text="Baja camarero" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="60.0" />
+                  <ImageView fitHeight="150.0" id="#ivLogo" fitWidth="200.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="82.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="168.0" />
+               </children>
+            </AnchorPane>
+         </center>
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="Menú">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#volverGestor" text="Volver a gestor de mesas" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Ayuda">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#abrirAyuda" text="Abrir ayuda" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

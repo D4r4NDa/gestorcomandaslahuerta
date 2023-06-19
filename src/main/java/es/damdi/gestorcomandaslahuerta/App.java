@@ -6,6 +6,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
@@ -26,6 +27,10 @@ public class App extends Application {
         stg.setTitle("LA HUERTA");
         stg.show();
 
+        Image img= new Image(getClass().getResourceAsStream("icon.png"));
+
+        stg.getIcons().add(img);
+
         initLayout();
     }
 
@@ -33,7 +38,7 @@ public class App extends Application {
         try {
             // Load root layout from fxml file.
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(App.class.getResource("main.fxml"));
+            loader.setLocation(App.class.getResource("view/main.fxml"));
             rootLayout = (AnchorPane) loader.load();
 
             // Show the scene containing the root layout.
@@ -43,6 +48,8 @@ public class App extends Application {
             // Give the controller access to the main app.
             MainController controller = loader.getController();
             controller.setMainApp(this);
+
+            stg.setResizable(false);
 
             stg.show();
         } catch (IOException e) {
@@ -54,7 +61,7 @@ public class App extends Application {
         try {
             // Load root layout from fxml file.
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(App.class.getResource("primary.fxml"));
+            loader.setLocation(App.class.getResource("view/primary.fxml"));
             rootLayout = (AnchorPane) loader.load();
 
             // Show the scene containing the root layout.

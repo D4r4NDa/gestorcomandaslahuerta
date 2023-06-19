@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            text-decoration: underline;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        RESTAURANTE LA HUERTA
+    </div>
+
+    <div class="estado_mesas">
+        <p id="mesa_libre"><h3><u>COBRAR FACTURA DE UNA MESA</u></h3></p>
+        <p>
+            Para cobrar la factura de una mesa lo primero es seleccionar la mesa deseada en la tabla de la izquierda.
+            Si la mesa está siendo atendida, al pulsar el botón de "REALIZAR COBRO" se mostrará la factura total de la mesa
+            y al pulsar en confirmar se liberará la mesa para ser ocupada de nuevo.
+        </p><br>
+
+        <p id="mesa_asignada"><h3><u>PERFIL DE ADMINISTRADOR</u></h3></p>
+        <p>
+            A través del perfil de administrador se puede gestionar las altas y bajas de los camareros.
+            Para acceder al perfil de administrador, desde el menú principal se pulsa en la opción de "Menú" de la barra superior
+            y a continuación en la opción "Perfil de administrador", aparecerá una ventana donde habrá que introducir la clave de
+            administrador y si es correcta la ventana cambiará y pasará a mostrar una tabla con los camareros actualmente contratados
+            y los botones de alta y baja de camareros.
+        </p><br>
+
+        <p id="mesa_ocupada"><h3><u>ALTA DE CAMARERO</u></h3></p>
+        <p>
+            Para dar de alta a un camarero se pulsa sobre el boton de alta y aparecerá un formulario donde habrá que poner el email, nombre y contraseña
+            del perfil. Todos los campos deben estar completados, el campo de email debe tener el formato correspondiente "xxxx@xxxx.xxx"; a su vez
+            el campo de contraseña debe tener al menos 6 caracteres ya sean letras, números o signos.
+            Si todos los campos se han rellenado correctamente, a la hora de presionar en confirmar se realizará la alta, si no se avisará de que campo
+            está errorneo y se dará la oportunidad de corregirlo.
+        </p><br>
+    </div>
+
+    <div class="toma_comandas">
+        <p><h3>BAJA DE CAMARERO</h3></p>
+        <p>
+            <p>
+                Para dar de baja a un camarero solo hay que seleccionarlo en la tabla y después pulsar sobre el botón de baja,
+                se pedirá confirmación y si se acepta se eliminará al usuario.
+            </p>
+    </div>
+</body>
+</html>

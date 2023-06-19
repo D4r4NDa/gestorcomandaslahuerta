@@ -1,6 +1,7 @@
 module es.damdi.gestorcomandaslahuerta {
     requires javafx.controls;
     requires javafx.fxml;
+    requires javafx.web;
     requires firebase.admin;
     requires com.google.auth.oauth2;
     requires java.desktop;

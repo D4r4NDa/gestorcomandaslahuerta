@@ -3,19 +3,16 @@ package es.damdi.gestorcomandaslahuerta;
 import com.google.auth.oauth2.GoogleCredentials;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.FirebaseOptions;
-
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 
 public class LaunchApp {
     public static void main(String[] args) {
-        FileInputStream serviceAccount = null;
-        try {
-            serviceAccount = new FileInputStream("key.json");
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        }
+
+        LaunchApp app= new LaunchApp();
+
+        InputStream serviceAccount = null;
+        serviceAccount = app.getClass().getResourceAsStream("key.json");
 
         FirebaseOptions options = null;
         try {
