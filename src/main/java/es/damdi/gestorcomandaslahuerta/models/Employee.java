@@ -1,4 +1,4 @@
-package es.damdi.gestorcomandaslahuerta;
+package es.damdi.gestorcomandaslahuerta.models;
 
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.SimpleBooleanProperty;

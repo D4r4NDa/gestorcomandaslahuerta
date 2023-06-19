@@ -1,4 +1,4 @@
-package es.damdi.gestorcomandaslahuerta;
+package es.damdi.gestorcomandaslahuerta.models;
 
 import java.io.Serializable;
 

@@ -8,4 +8,8 @@ module es.damdi.gestorcomandaslahuerta {
 
     opens es.damdi.gestorcomandaslahuerta to javafx.fxml, firebase.admin;
     exports es.damdi.gestorcomandaslahuerta;
+    exports es.damdi.gestorcomandaslahuerta.models;
+    opens es.damdi.gestorcomandaslahuerta.models to firebase.admin, javafx.fxml;
+    exports es.damdi.gestorcomandaslahuerta.controllers;
+    opens es.damdi.gestorcomandaslahuerta.controllers to firebase.admin, javafx.fxml;
 }

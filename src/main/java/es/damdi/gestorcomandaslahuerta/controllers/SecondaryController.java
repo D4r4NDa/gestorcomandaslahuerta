@@ -1,4 +1,4 @@
-package es.damdi.gestorcomandaslahuerta;
+package es.damdi.gestorcomandaslahuerta.controllers;
 
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -6,13 +6,12 @@ import com.google.firebase.auth.FirebaseAuthException;
 import com.google.firebase.auth.UserRecord;
 import com.google.firebase.auth.UserRecord.CreateRequest;
 import com.google.firebase.database.FirebaseDatabase;
+import es.damdi.gestorcomandaslahuerta.models.Camarero;
+import es.damdi.gestorcomandaslahuerta.models.Employee;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.stage.Modality;
@@ -35,8 +34,13 @@ public class SecondaryController {
 
   @FXML
   private Button registerButton;
+  private Dialog d;
 
-  @FXML
+    public SecondaryController(Dialog<Employee> dialog) {
+        d= dialog;
+    }
+
+    @FXML
   private void handleRegisterButton(ActionEvent event) {
       createUser();
   }
@@ -64,6 +68,7 @@ public class SecondaryController {
               .setPassword(password);
           UserRecord userRecord = auth.createUser(request);
           uid= userRecord.getUid();
+          System.out.println(uid);
 
           Camarero c= new Camarero(email, nombre.toString(), password, false, uid.toString());
 
@@ -89,8 +94,8 @@ public class SecondaryController {
         } catch (FirebaseAuthException ex) {
           Stage dialog = new Stage();
             dialog.initModality(Modality.APPLICATION_MODAL);
-            dialog.setTitle("Employee Registration");
-            Label dialogLabel = new Label("Error creando el usuario");
+            dialog.setTitle("ERROR");
+            Label dialogLabel = new Label("Algo salió mal al dar de alta al empleado.\nSi el eror persiste contacta al técnico");
             dialogLabel.setFont(new Font(16));
             Button dialogButton = new Button("OK");
             dialogButton.setOnAction(e -> dialog.close());
@@ -106,6 +111,6 @@ public class SecondaryController {
 
     @FXML
     private void cancelRegister() throws Throwable {
-        this.finalize();
+        d.close();
     }
 }
